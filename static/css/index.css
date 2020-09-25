@@ -233,6 +233,12 @@
   .services__description p {
     padding: 0 360px;
   }
+  .services__box {
+    text-align: left;
+  }
+  .services__box__imgcontainer {
+    left: 32px;
+  }
   .services__items {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 40px;
@@ -384,6 +390,7 @@ body {
   font-family: "Poppins";
   font-size: 18px;
   overflow: hidden;
+  min-width: 375px;
 }
 
 .wrapper {
