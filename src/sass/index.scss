@@ -1,0 +1,81 @@
+:root {
+  // ### Primary
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  // ### Secondary
+  --Red: hsl(0, 87%, 67%);
+  // ### Neutral
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+}
+@mixin hover {
+  color: black;
+  cursor: pointer;
+}
+@import "./header.scss";
+@import "./hero.scss";
+@import "./searcher.scss";
+@import "./services.scss";
+@import "./info.scss";
+@import "./footer.scss";
+@import "./result.scss";
+html {
+  overflow-x: hidden;
+}
+.image-with-hover:hover {
+  color: var(--Cyan) !important;
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 18px;
+  overflow: hidden;
+}
+.wrapper {
+  padding: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    padding: 20px 160px;
+  }
+  .wrap-with-color {
+    margin-top: 60px !important;
+  }
+}
+.wrap-with-color {
+  position: relative;
+  padding-top: 80px;
+  background-color: #f0f1f6;
+}
+.copy {
+  color: var(--GrayishViolet);
+}
+.title {
+  &__h1 {
+    font-size: 1.7em;
+    color: var(--VeryDarkBlue);
+  }
+}
+.button {
+  background-color: var(--Cyan);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 50px;
+}
+.button-2 {
+  background-color: var(--Cyan);
+  color: white;
+  border: 0;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,37 @@
+.result {
+  height: 100%;
+  width: 328px;
+  margin: auto;
+  margin-top: 20px;
+  &__button {
+    padding: 0 18px;
+    button {
+      width: 100%;
+      font-size: 0.9em;
+    }
+  }
+  &__content {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 18px 0;
+    text-align: left;
+    &-hr {
+      outline: none;
+      border: 0;
+      border: 0.1px solid var(--Gray);
+      width: 100%;
+    }
+    &-a {
+      padding: 0 18px;
+      text-decoration: none;
+      color: var(--Cyan);
+      font-weight: 700;
+    }
+    &-label {
+      padding: 0 18px;
+      font-size: 0.9em;
+    }
+  }
+}

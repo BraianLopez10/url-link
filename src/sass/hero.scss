@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  &__content {
+    text-align: center;
+  }
+  &__image {
+    img {
+      height: 350px;
+    }
+  }
+  &__description {
+    button {
+      margin-top: 15px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      direction: rtl;
+      margin-bottom: 100px;
+    }
+    &__image {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      img {
+        position: absolute;
+        height: 110%;
+        left: 150px;
+        width: 110%;
+      }
+    }
+    &__description {
+      direction: ltr;
+      text-align: left;
+      h1 {
+        font-size: 4em;
+        margin-bottom: 0px;
+      }
+      p {
+        padding-right: 90px;
+        margin-top: 0;
+      }
+    }
+  }
+}

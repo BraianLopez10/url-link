@@ -1,0 +1,27 @@
+.info {
+  margin-top: 75px;
+  // display: none;
+  &__content {
+    background: url("../../static/images/bg-boost-mobile.svg") no-repeat;
+    background-color: var(--DarkViolet);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-h1 {
+      color: white;
+    }
+    button {
+      font-size: 1.3em;
+      width: 200px;
+      height: 60px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__content {
+      background: url("../../static/images/bg-boost-desktop.svg") no-repeat;
+      background-color: var(--DarkViolet);
+    }
+  }
+}
