@@ -12,7 +12,53 @@
   position: relative;
 }
 .header__menu {
+  background-color: var(--DarkViolet);
+  left: 0;
+  color: white;
+  height: 385px;
+  width: 325px;
+  margin-top: 60px;
+  left: calc(50% - 325px / 2);
+  border-radius: 5px;
   display: none;
+  position: absolute;
+  z-index: 9999;
+}
+.header__menu-hr {
+  display: block;
+  border: 0;
+  width: calc(100% - 50px);
+  border: 0.4px solid gray;
+}
+.header__menu__items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.header__menu__items-li {
+  margin-top: 38px;
+  list-style: none;
+}
+.header__menu__button {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 25px;
+}
+.header__menu__button-li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.header__menu__button-li a {
+  text-decoration: none;
+  color: white;
+}
+.header__menu__button-li button {
+  width: 100%;
 }
 .header__content {
   display: flex;
@@ -27,15 +73,25 @@
 @media screen and (min-width: 1440px) {
   .header__menu {
     width: 100%;
+    position: relative;
     box-sizing: border-box;
+    height: auto;
+    margin: auto;
     display: flex;
+    left: 0;
+    flex-direction: row;
+    background-color: white;
     color: var(--GrayishViolet);
     align-items: center;
     justify-content: space-between;
   }
+  .header__menu-hr {
+    display: none;
+  }
   .header__menu__items {
     margin-left: 145px;
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
   }
@@ -125,6 +181,7 @@
   width: 328px;
   border-radius: 10px;
   position: absolute;
+  box-sizing: border-box;
   left: calc(50% - 328px / 2);
   border: 1px solid green;
   top: -80px;
@@ -169,6 +226,13 @@
   border-radius: 5px;
   outline: none;
   padding: 10px;
+}
+.searcher__form-label {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 5px;
+  color: var(--Red);
+  display: none;
 }
 
 .services__content {
@@ -358,6 +422,8 @@
   background-color: white;
   padding: 18px 0;
   text-align: left;
+  margin-top: 20px;
+  overflow: hidden;
 }
 .result__content-hr {
   outline: none;
@@ -391,6 +457,10 @@ body {
   font-size: 18px;
   overflow: hidden;
   min-width: 375px;
+}
+
+.error-input {
+  border: 3px solid var(--Red);
 }
 
 .wrapper {

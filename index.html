@@ -15,12 +15,13 @@
       <div class="wrapper">
         <div class="header__content">
           <img class="header__logo" src="static/images/logo.svg" alt="logo" />
-          <div class="header__menu">
+          <div class="header__menu" id="menu">
             <ul class="header__menu__items">
               <li class="header__menu__items-li">Features</li>
               <li class="header__menu__items-li">Pricing</li>
               <li class="header__menu__items-li">Resources</li>
             </ul>
+            <hr class="header__menu-hr" />
             <ul class="header__menu__button">
               <li class="header__menu__button-li">
                 <a href="#">Login</a>
@@ -30,7 +31,7 @@
               </li>
             </ul>
           </div>
-          <label class="header__button"></label>
+          <label class="header__button" id="menu-button"></label>
         </div>
       </div>
     </header>
@@ -56,28 +57,19 @@
     </section>
     <div class="wrap-with-color">
       <section class="searcher">
-        <form class="searcher__form">
+        <form class="searcher__form" onsubmit="handleSubmit(event)">
           <input
+            id="input-link"
             placeholder="Shorten a link here"
             class="searcher__form-input"
           />
+          <label class="searcher__form-label" id="label-error"
+            >Please add a link</label
+          >
           <button class="button-2">Shorten it!</button>
         </form>
       </section>
-      <section class="result" style="display: none">
-        <div class="result__content">
-          <label class="result__content-label"
-            >https://frontendmentors.io</label
-          >
-          <hr class="result__content-hr" />
-          <a class="result__content-a" href="https://rel.ink/k4kas3r"
-            >https://rel.ink/k4kas3r</a
-          >
-          <div class="result__button">
-            <button class="button-2">Copy</button>
-          </div>
-        </div>
-      </section>
+      <section class="result" id="section-result"></section>
       <section class="services">
         <div class="wrapper">
           <div class="services__content">
