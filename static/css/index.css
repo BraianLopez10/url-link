@@ -238,6 +238,7 @@
   font-style: italic;
   margin-top: 5px;
   color: var(--Red);
+  display: block;
 }
 
 .services__content {
