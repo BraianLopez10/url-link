@@ -1,10 +1,28 @@
 .result {
   height: 100%;
-  width: 328px;
-  margin: auto;
   margin-top: 20px;
+  @media screen and (min-width: 1440px) {
+    &__button {
+      button {
+        margin: 0;
+        max-width: 100px;
+      }
+    }
+    &__content {
+      display: grid !important;
+      grid-template-columns: 500px 300px auto;
+      align-items: center;
+      width: 1115px;
+      margin: auto;
+      &-hr {
+        display: none;
+      }
+    }
+  }
   &__button {
     padding: 0 18px;
+    display: flex;
+    justify-content: flex-end;
     button {
       width: 100%;
       font-size: 0.9em;

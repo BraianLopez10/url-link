@@ -41,6 +41,7 @@ function handleSubmit(e) {
     let data = {
       url: valor.trim(),
     };
+    input.value = "";
     fetch("https://rel.ink/api/links/", {
       method: "POST",
       body: JSON.stringify(data),

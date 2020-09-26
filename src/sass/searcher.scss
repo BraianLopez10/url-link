@@ -30,6 +30,11 @@
         margin: 0;
         margin-left: 15px;
       }
+      &-label {
+        bottom: 25px;
+        left: 55px;
+        position: absolute;
+      }
     }
   }
   &__form {
@@ -41,6 +46,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    position: relative;
     &-input {
       box-sizing: border-box;
       height: 50px;
@@ -56,7 +62,7 @@
       font-style: italic;
       margin-top: 5px;
       color: var(--Red);
-      display: none;
+      // display: block;
     }
   }
 }
