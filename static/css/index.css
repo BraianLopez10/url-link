@@ -210,6 +210,7 @@
     bottom: 25px;
     left: 55px;
     position: absolute;
+    display: none;
   }
 }
 .searcher__form {
@@ -238,6 +239,7 @@
   font-style: italic;
   margin-top: 5px;
   color: var(--Red);
+  display: none;
 }
 
 .services__content {

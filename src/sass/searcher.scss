@@ -34,6 +34,7 @@
         bottom: 25px;
         left: 55px;
         position: absolute;
+        display: none;
       }
     }
   }
@@ -62,7 +63,7 @@
       font-style: italic;
       margin-top: 5px;
       color: var(--Red);
-      display: block;
+      display: none;
     }
   }
 }
